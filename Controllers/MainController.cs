@@ -6,10 +6,5 @@ namespace CleanCodeArchitecture.Controllers
 {
     public class MainController : BaseApiController<MainController>
     {
-        private IMongoContext<E_Test> entitesTest { get; set; }
-        public MainController()
-        {
-
-        }
     }
 }

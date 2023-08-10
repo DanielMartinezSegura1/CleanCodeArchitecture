@@ -9,6 +9,7 @@ namespace Application.Services
     {
         public static IServiceCollection AddApplicationServices(this IServiceCollection _services)
         {
+            _services.AddAutoMapper(Assembly.GetExecutingAssembly());
             _services.AddMediatR(configuration =>
             {
                 configuration.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());

@@ -9,7 +9,9 @@ namespace CleanCodeArchitecture.Services
         {
             this.httpContextAccessor = httpContextAccessor;
 
-            UserId = new Guid(httpContextAccessor.HttpContext?.User?.FindFirstValue(ClaimTypes.NameIdentifier));
+            var id = !string.IsNullOrEmpty(httpContextAccessor.HttpContext?.User?.FindFirstValue(ClaimTypes.NameIdentifier)) ? httpContextAccessor.HttpContext?.User?.FindFirstValue(ClaimTypes.NameIdentifier) : "";
+
+            UserId = string.IsNullOrEmpty(id) ? Guid.Empty : new Guid(id);
             Name = httpContextAccessor.HttpContext?.User?.FindFirstValue(ClaimTypes.Name);
             SurName = httpContextAccessor.HttpContext?.User?.FindFirstValue(ClaimTypes.Surname);
             Email = httpContextAccessor.HttpContext?.User?.FindFirstValue(ClaimTypes.Email);
