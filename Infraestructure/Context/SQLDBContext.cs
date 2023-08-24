@@ -1,5 +1,5 @@
 ﻿using Application.Interfaces;
-using Infraestructure.Contracts;
+using Domain.Contracts;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

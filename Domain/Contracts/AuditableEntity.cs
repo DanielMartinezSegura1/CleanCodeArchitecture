@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Infraestructure.Contracts
+namespace Domain.Contracts
 {
     public abstract class AuditableEntity<TId>
     {

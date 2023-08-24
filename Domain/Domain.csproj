@@ -7,11 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Infraestructure\Infraestructure.csproj" />
+    <Folder Include="Entities\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\" />
+    <PackageReference Include="MongoDB.Bson" Version="2.20.0" />
   </ItemGroup>
 
 </Project>

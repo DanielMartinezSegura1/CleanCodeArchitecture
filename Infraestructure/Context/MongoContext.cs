@@ -1,5 +1,5 @@
 ﻿using Application.Interfaces;
-using Infraestructure.Contracts;
+using Domain.Contracts;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 using Newtonsoft.Json.Linq;

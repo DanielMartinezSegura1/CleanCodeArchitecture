@@ -2,6 +2,7 @@
 using Infraestructure.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using Newtonsoft.Json;
 using Shared;
 using System.Net;
 using System.Reflection;
